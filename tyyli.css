@@ -2,19 +2,29 @@
     font-family: grandview;
     src: url(Grandview.ttf);
 }
-#Päävalikkojutut
+/*Päävalikkojutut*/
 nav a {
-background: beige;
+background: #98FF98;
 font-family: grandview; src: url(grandview.ttf);
 color: skyblue;
 text-decoration: none;
 display: inline-block;
-border: 1px solid beige;
+border: 2px solid ;
+}
+nav a:hover {
+color: beige;
+background-color: #3ba03b94;    
+}
+
+#valittu {
+    color: skyblue;
+    background-color: rgb(125, 125, 113);
+
 
 }
 
 body {
-    background-color: #98FF98;
+    background-color: beige;
 
 
 }
