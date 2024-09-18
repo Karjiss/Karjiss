@@ -2,7 +2,16 @@
     font-family: grandview;
     src: url(Grandview.ttf);
 }
+#Päävalikkojutut
+nav a {
+background: beige;
+font-family: grandview; src: url(grandview.ttf);
+color: skyblue;
+text-decoration: none;
+display: inline-block;
+border: 1px solid beige;
 
+}
 
 body {
     background-color: #98FF98;
