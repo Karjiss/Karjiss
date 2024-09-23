@@ -25,6 +25,16 @@ background-color: #3ba03b94;
 
 body {
     background-color: rgb(247, 247, 191);
+   
 
 
+}
+/*Pääsivun sisältöjuttuja*/
+.grid-kuva { grid-area: g3; }
+
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    padding 20px;
 }
