@@ -1,41 +1,82 @@
+/* Import the Grandview font */
 @font-face {
-    font-family: grandview;
-    src: url(Grandview.ttf);
-}
-/*Päävalikkojutut*/
-nav a {
-header
-background: #98FF98;
-font-family: grandview; src: url(grandview.ttf);
-color: rgb(33, 131, 169);
-text-decoration: none;
-display: inline-block;
-border: 2px solid ;
-}
-nav a:hover {
-color: beige;
-background-color: #3ba03b94;    
+    font-family: 'Grandview';
+    src: url('Grandview.ttf') format('truetype');
 }
 
-#valittu {
-    color: skyblue;
-    background-color: rgb(125, 125, 113);
-
-
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(247, 247, 191);
-   
-
-
+    font-family: 'Grandview', sans-serif;
+    background-color: rgb(247, 247, 191); /* Light yellow background */
 }
-/*Pääsivun sisältöjuttuja*/
-.grid-kuva { grid-area: g3; }
 
+/* Navigation styles */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    align-items: center;
+    background-color: #98FF98; /* Light green background */
+    padding: 15px;
+}
 
+.nav-center {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-center a {
+    color: rgb(33, 131, 169); /* Blue text color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 15px; /* Padding for spacing */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid transparent; /* Invisible border */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-center a:hover {
+    color: beige; /* Change to beige on hover */
+    background-color: #3ba03b94; /* Greenish hover effect */
+    border-color: rgb(33, 131, 169); /* Border color on hover */
+}
+
+#valittu {
+    color: skyblue; /* Sky blue color for selected */
+    background-color: rgb(125, 125, 113); /* Grayish background */
+}
+
+/* Grid layout styling */
 .grid-container {
     display: grid;
     gap: 20px;
     padding: 20px;
+}
+
+.grid-kuva {
+    grid-area: g3;
+}
+
+.kuva {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }
