@@ -14,7 +14,16 @@
 body {
     font-family: 'Grandview', sans-serif;
     background-color: rgb(247, 247, 191); /* Beige/Keltainen tausta */
-    
+    display: flex;
+    flex-direction: column;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+section {
+flex: 1;
 }
 
 /* Navigation styles */
