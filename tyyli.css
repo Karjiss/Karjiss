@@ -97,3 +97,27 @@ body {
   
       
 }
+footer {
+    background-color: #98FF98; /* footer taustaväri */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #333; /* Muuta väriä haluamaksesi */
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content i {
+    font-size: 24px; /* Säädä kuvakkeen kokoa */
+    color: #e1306c; /* Instagramin brändiväri */
+    margin-left: 10px; /* Tilaa sähköpostin jälkeen */
+}
