@@ -133,3 +133,54 @@ footer {
     color: #e1306c; /* Instagramin brändiväri */
     margin-left: 10px; /* Tilaa sähköpostin jälkeen */
 }
+
+/* Palvelut-sivu tyylit */
+.palvelut-sivu {
+    padding: 40px 20px;
+    text-align: center; /* Keskittää otsikon */
+}
+
+.palvelut-sivu h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.palvelut-sivu .palvelut {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Välit palveluiden välillä */
+}
+
+.palvelut-sivu .palvelu {
+    background-color: skyblue;
+    border: 5px solid #98FF98;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%; /* Leveys palvelulle */
+    max-width: 300px;
+    text-align: center;
+}
+
+.palvelut-sivu .palvelu-kuva {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Responsiivisuus */
+@media (max-width: 768px) {
+    .palvelut-sivu .palvelu {
+        width: 45%; /* Leveys pienemmille näytöille */
+    }
+}
+
+@media (max-width: 480px) {
+    .palvelut-sivu .palvelu {
+        width: 100%; /* Täysi leveys pienimmille näytöille */
+    }
+}
+
+
