@@ -169,6 +169,14 @@ section {
     border-radius: 8px;
     margin-bottom: 15px;
 }
+.palvelut-sivu p {
+    margin-bottom: 1em; /* Lisää tilaa kappaleiden väliin */
+}
+
+.palvelut-sivu ul {
+    margin-top: 0.5em; /* Vähän vähemmän tilaa listojen kohdalle */
+}
+
 
 /*Yhteystiedot-tyylit*/
 
