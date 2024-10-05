@@ -1,9 +1,9 @@
-/* Grandview fontti */
+/*Fontti ja Yleiset Tyylit*/
+
 @font-face {
     font-family: 'Grandview';
     src: url('grandview.ttf') format('truetype');
 }
-
 
 * {
     margin: 0;
@@ -17,128 +17,127 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 html, body {
     height: 100%;
     margin: 0;
 }
 
 section {
-flex: 1;
+    flex: 1;
 }
 
-/* Navigation styles */
+/*Navigaatio palkki tyylit*/
+
 .navbar {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     background-color: #98FF98; 
-    padding: 15px; 
+    padding: 15px;
 }
 
 .nav-logo {
-    margin-right: 20px; /* Logon ja linkkien väli */
+    margin-right: 20px;
 }
 
 .nav-logo img {
-    max-height: 50px; /* Logon korkeus */
-    width: auto; 
+    max-height: 50px;
+    width: auto;
 }
 
 .nav-center {
     display: flex;
-    gap: 30px; /* Linkkien välinen tila */
+    gap: 30px;
 }
 
 .nav-center a {
-    color: rgb(33, 131, 169); /* Sininen teksti */
+    color: rgb(33, 131, 169);
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
-    padding: 10px 15px; 
-    background-color: transparent; 
-    border: 2px solid transparent; 
+    padding: 10px 15px;
+    border: 2px solid transparent;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-center a:hover {
-    color: beige; /* Hoveraamalla väri beige */
-    background-color: #3ba03b94; /* Oliivinvihreä */
-    border-color: rgb(33, 131, 169); /* Reunojen väri hoveraamalla */
+    color: beige;
+    background-color: #3ba03b94; /* Hover oliivinvihreä */
+    border-color: rgb(33, 131, 169);
 }
 
 #valittu {
-    color: skyblue; /* Sky blue väri valitulle */
+    color: skyblue;
     background-color: rgb(125, 125, 113); /* Harmahtava tausta */
 }
 
-/* Grid layout styling */
-.grid-container {
-    display: grid;
-    gap: 20px;
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-.grid-kuva {
-    grid-area: g3;
+.hero-content h1 {
+    font-size: 2.5rem;
 }
 
-.kuva {
-    width: 100%;
-    height: auto;
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
+/*About section tyylit*/
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Stack elements on smaller screens */
-        align-items: center; /* Center items vertically */
-    }
-
-    .nav-center {
-        gap: 10px; /* Adjust gap for vertical layout */
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-    
-  
-      
-}
-footer {
-    background-color: #98FF98; /* footer taustaväri */
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
-    position: relative;
-}
-
-.footer-content p {
-    margin: 800px 0;
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.footer-content a {
-    color: #333; /* Muuta väriä haluamaksesi */
-    text-decoration: none;
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 600px;
 }
 
-.footer-content a:hover {
-    text-decoration: underline;
+.about-image {
+    flex: 1;
+    text-align: center;
 }
 
-.footer-content i {
-    font-size: 24px; /* Säädä kuvakkeen kokoa */
-    color: #e1306c; /* Instagramin brändiväri */
-    margin-left: 10px; /* Tilaa sähköpostin jälkeen */
+.about-image img.scaled-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-/* Palvelut-sivu tyylit */
+/*Call-to-action tyylit*/
+
+.cta-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-text h2 {
+    font-size: 2rem;
+}
+
+.cta-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/*Palvelut-sivu tyylit*/
+
 .palvelut-sivu {
     padding: 40px 20px;
-    text-align: center; /* Keskittää otsikon */
+    text-align: center;
 }
 
 .palvelut-sivu h1 {
@@ -150,7 +149,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px; /* Välit palveluiden välillä */
+    gap: 20px;
 }
 
 .palvelut-sivu .palvelu {
@@ -159,7 +158,7 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 30%; /* Leveys palvelulle */
+    width: 30%; 
     max-width: 300px;
     text-align: center;
 }
@@ -171,17 +170,102 @@ footer {
     margin-bottom: 15px;
 }
 
-/* Responsiivisuus */
+/*Yhteystiedot-tyylit*/
+
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f7f7bf;
+}
+
+.contact-details p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.tele-picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tele-picture img.scaled-image {
+    max-width: 300px; 
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*Footer tyyli */
+
+footer {
+    background-color: #98FF98;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content i {
+    font-size: 24px;
+    color: #e1306c; /* Instagram-brändiväri */
+    margin-left: 10px;
+}
+
+/* -----------------------
+   Responsiivisuus
+------------------------ */
+
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-center {
+        gap: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        margin-right: 0;
+    }
+
+    .about-image img.scaled-image {
+        max-width: 100%;
+    }
+
     .palvelut-sivu .palvelu {
-        width: 45%; /* Leveys pienemmille näytöille */
+        width: 45%;
+    }
+
+    .contact-section {
+        padding: 20px 10px;
     }
 }
 
 @media (max-width: 480px) {
     .palvelut-sivu .palvelu {
-        width: 100%; /* Täysi leveys pienimmille näytöille */
+        width: 100%;
     }
 }
-
-
